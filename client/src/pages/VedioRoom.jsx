@@ -34,7 +34,7 @@ const VideoRoom = () => {
                 sharedLinks: [
                     {
                         name: 'Copy link',
-                        url: `${window.location.origin}/room/${roomId}?username=${userName}`,
+                        url: `${window.location.origin}/room/${roomId}`,
                     },
                 ],
                 turnOnMicrophoneWhenJoining: true,

@@ -9,7 +9,7 @@ const Home = () => {
     const handleJoin = () => {
         if (!roomId.trim()) return alert("Please enter a room ID")
         if (!userName.trim()) return alert("Please enter your name")
-        navigate(`/room/${roomId}?username=${userName}`)
+        navigate(`/room/${roomId}`)
     }
     
     // Function to generate a simple room ID
