@@ -15,7 +15,7 @@ const VideoRoom = () => {
 
     const initializeMeeting = async () => {
       const appID = 680160827
-      const serverSecret = "e147b9efb61548a155f9877c66b00e49"
+      const serverSecret = 'e147b9efb61548a155f9877c66b00e49'
 
       const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
         appID,
@@ -52,31 +52,30 @@ const VideoRoom = () => {
   }, [roomId, userName])
 
   return (
-    <div className="relative w-screen h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden">
-      {/* Pattern background */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-blue-500/20"></div>
-        <div
-          className="absolute top-0 left-0 w-full h-full bg-repeat opacity-30"
-          style={{
-            backgroundImage:
-              "url('data:image/svg+xml,%3Csvg width=\\'60\\' height=\\'60\\' viewBox=\\'0 0 60 60\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'none\\' fill-rule=\\'evenodd\\'%3E%3Cg fill=\\'%23ffffff\\' fill-opacity=\\'0.05\\'%3E%3Ccircle cx=\\'7\\' cy=\\'7\\' r=\\'1\\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')",
-          }}
-        ></div>
-      </div>
+<div className=" zego-container-wrapper w-screen h-screen  mt-5">
+  {/* Pattern background */}
+  <div className="absolute inset-0 pointer-events-none opacity-10 z-0">
+    <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-blue-500/20" />
+    <div
+      className="absolute inset-0 bg-repeat opacity-30"
+      style={{
+        backgroundImage:
+          "url('data:image/svg+xml,%3Csvg width=\\'60\\' height=\\'60\\' viewBox=\\'0 0 60 60\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'none\\' fill-rule=\\'evenodd\\'%3E%3Cg fill=\\'%23ffffff\\' fill-opacity=\\'0.05\\'%3E%3Ccircle cx=\\'7\\' cy=\\'7\\' r=\\'1\\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')",
+      }}
+    />
+  </div>
 
-      {/* Video call container */}
-      <div
-        ref={meetingRef}
-        className="zego-container-wrapper relative z-10 w-full h-full rounded-xl shadow-2xl overflow-hidden"
-      />
+  {/* Main Zego UI area */}
+  <div className="relative z-10 h-full w-full">
+    <div ref={meetingRef} className="w-full h-full" />
+  </div>
 
-      {/* Live badge */}
-      <div className="absolute top-4 right-4 z-20 flex items-center bg-green-600 text-white px-4 py-1 rounded-full text-sm shadow-lg animate-pulse">
-        <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
-        Live Debate
-      </div>
-    </div>
+  {/* Live badge */}
+  <div className="fixed top-3 right-3 z-20 flex items-center bg-green-700 text-white px-3 py-1 rounded-full text-xs shadow-lg animate-pulse">
+    <span className="w-2 h-2 bg-white rounded-full mr-2" />
+    Live Debate
+  </div>
+</div>
   )
 }
 
