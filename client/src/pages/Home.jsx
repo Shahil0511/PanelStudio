@@ -106,7 +106,7 @@ const Home = () => {
 
           {/* Footer */}
           <div className="text-center mt-6 text-gray-500 text-sm">
-            <p>© 2025 PANELSTUDIO - Professional Broadcasting Platform</p>
+            <p>© 2025 Pioneer Ventures - Professional Broadcasting Platform</p>
             <p className="mt-1">Connecting journalists worldwide</p>
           </div>
         </div>

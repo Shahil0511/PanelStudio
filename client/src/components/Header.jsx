@@ -10,7 +10,7 @@ export const Header = () => (
         </svg>
       </div>
       <h1 className="text-4xl md:text-5xl font-bold text-white">
-        PANEL<span className="text-red-500">STUDIO</span>
+        CLY<span className="text-red-500">PSE</span>
       </h1>
     </div>
     <p className="text-gray-300 text-lg">Professional News Debate Platform</p>
