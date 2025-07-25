@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+
+/* zego-custom.css */
+.zego-container-wrapper button {
+  background-color: #22c55e !important; /* Tailwind's green-500 */
+  border-color: #22c55e !important;
+  color: white !important;
+}
+
+.zego-container-wrapper button:hover {
+  background-color: #16a34a !important; /* Tailwind's green-600 */
+  border-color: #16a34a !important;
+}
+
+

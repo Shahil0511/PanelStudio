@@ -36,7 +36,7 @@ const VideoRoom = () => {
         sharedLinks: [
           {
             name: 'Copy link',
-            url: `${window.location.origin}/room/${roomId}?username=${userName}`,
+            url: `${window.location.origin}/room/${roomId}`,
           },
         ],
         turnOnMicrophoneWhenJoining: true,
@@ -68,7 +68,7 @@ const VideoRoom = () => {
       {/* Video call container */}
       <div
         ref={meetingRef}
-        className="relative z-10 w-full h-full rounded-xl shadow-2xl overflow-hidden"
+        className="zego-container-wrapper relative z-10 w-full h-full rounded-xl shadow-2xl overflow-hidden"
       />
 
       {/* Live badge */}

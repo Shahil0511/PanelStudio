@@ -14,12 +14,14 @@ const Home = () => {
   const handleJoin = () => {
     if (!roomId.trim()) return alert("Please enter a room ID")
     if (!userName.trim()) return alert("Please enter your name")
-    navigate(`/room/${roomId}`)
+    // Add username as URL parameter
+    navigate(`/room/${roomId}?username=${encodeURIComponent(userName)}`)
   }
 
   const generateRoomId = () => {
     const id = Math.random().toString(36).substring(2, 8)
     setRoomId(id)
+  
   }
 
   return (
