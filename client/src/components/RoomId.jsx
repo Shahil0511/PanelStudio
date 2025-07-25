@@ -20,7 +20,7 @@ export const RoomIdSection = ({ roomId, setRoomId, generateRoomId }) => (
       </div>
       <button
         onClick={generateRoomId}
-        className="px-4 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-lg hover:from-gray-500 hover:to-gray-600 transition-all duration-200 font-medium whitespace-nowrap shadow-lg"
+        className="px-4 py-3 bg-gradient-to-r from-green-400 to-green-700 text-white rounded-lg hover:from-gray-500 hover:to-gray-600 transition-all duration-200 font-medium whitespace-nowrap shadow-lg"
       >
         Generate
       </button>
